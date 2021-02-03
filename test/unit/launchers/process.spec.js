@@ -80,7 +80,7 @@ describe('launchers/process.js', () => {
     })
   })
 
-  describe.only('with RetryLauncher', () => {
+  describe('with RetryLauncher', () => {
     function assertSpawnError ({ errorCode, emitExit, expectedError }, done) {
       ProcessLauncher.call(launcher, mockSpawn, mockTempDir)
       RetryLauncher.call(launcher, 2)
